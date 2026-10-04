@@ -4,90 +4,123 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Arundhati Sengupta</title>
-  <meta name="description" content="Research by Arundhati Sengupta: Bengali grapheme-to-phoneme conversion, LLM evaluation, and multilingual speech and text resources.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5c57'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%23ffffff' text-anchor='middle'%3E%E0%A6%85%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Research by Arundhati Sengupta on Bengali grapheme-to-phoneme conversion, LLM evaluation and multilingual language data.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23357edd'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%23ffffff' text-anchor='middle'%3E%E0%A6%85%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="wrap">
-    <a class="brand" href="index.html" title="Home" lang="bn">অ</a>
-    <ul>
-      <li><a href="index.html">About</a></li>
-      <li><a href="research.html" aria-current="page">Research</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<header class="page-head">
-  <div class="wrap">
-    <p class="eyebrow">Research</p>
-    <h1>How people write, how machines read</h1>
-    <p class="lede">My research looks at the gap between written text and spoken language, and at how well models, from neural sequence models to LLMs, bridge it.</p>
+<header class="masthead">
+  <div class="page">
+    <a class="name" href="index.html">Arundhati Sengupta</a>
+    <nav>
+      <a class="pill" href="index.html">About</a>
+      <a class="pill" href="research.html" aria-current="page">Research</a>
+      <a class="pill" href="resume.html">Resume</a>
+      <a class="pill" href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
-<section>
-  <div class="wrap section-head">
-    <h2>Dissertation</h2>
-    <div class="prose">
-      <h3>A Study of Bengali Grapheme-to-Phoneme Conversion</h3>
-      <p class="where" style="color: var(--warm); font-weight: 500;">Ph.D. in Linguistics, Graduate Center, City University of New York</p>
-      <p>Bengali is spoken by over 230 million people, yet G2P conversion for it has received little attention. Bengali spelling doesn't map neatly onto pronunciation, above all in whether the inherent vowel is pronounced and how. My dissertation identified where G2P errors come from and developed ways to fix them.</p>
-      <ul>
-        <li><strong>Neural model comparison and error analysis.</strong> I trained and compared four neural G2P architectures (attentive recurrent models, a transducer and a transformer) and used a finite-state error analysis to trace most remaining errors to inherent-vowel realization.</li>
-        <li><strong>Hybrid models.</strong> Based on that finding, I built an inherent-vowel correction classifier that works as a post-hoc layer on top of the neural models and substantially reduces word error rate.</li>
-        <li><strong>Multi-source corpus.</strong> I created the first multi-source G2P corpus for Bengali, combining two independently built lexicons, and found that a training resource's transcription consistency matters more than its raw coverage.</li>
-        <li><strong>LLM evaluation.</strong> In the first systematic evaluation of LLMs on Bengali G2P, I piloted four models (Gemini 2.5 Pro, Claude Opus 4.5, Claude Sonnet 4 and GPT-4o) through their APIs, using curated 20-shot prompts, then tested the best one, Gemini 2.5 Pro, in zero- and few-shot settings on two lexicons. Even Gemini trailed a purpose-built LSTM baseline (39.5 vs. 15.8 word error rate), and it failed most often on phonology the spelling doesn't show, such as inherent-vowel realization and diphthongs.</li>
-        <li><strong>Diacritization.</strong> I introduced the first publicly available Bengali diacritization corpus, and showed that restoring pronunciation-disambiguating diacritics lets both a recurrent model and a fine-tuned byte-level transformer resolve the ambiguity directly.</li>
-      </ul>
-    </div>
-  </div>
-</section>
+<main class="text">
+  <h1 class="page-title">Research</h1>
+  <p class="page-subtitle">How people write, how machines read. My research looks at the gap between written text and spoken language, and at how well models, from neural sequence models to LLMs, bridge it.</p>
 
-<section>
-  <div class="wrap">
-    <h2>Selected projects</h2>
-    <div class="cards">
-      <div class="card">
-        <span class="tag">Open source</span>
-        <h3><a href="https://github.com/arundhati-sengupta/g2pErrorAnalysis">G2P Error Analysis Tool</a></h3>
-        <p>A WFST- and rule-based QA tool that automates quality control and systematic error reporting on grapheme-to-phoneme model output.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Grant-funded</span>
-        <h3>Multilingual annotated corpora</h3>
-        <p>Large-scale corpora built with native-speaker annotators, with guidelines I wrote and ambiguous cases I adjudicated (BSF grant). Integrated with heterogeneous datasets in SQL and Python (PSC-CUNY grant).</p>
-      </div>
-      <div class="card">
-        <span class="tag">M.A. thesis</span>
-        <h3>Personality Trait Prediction from Speech</h3>
-        <p>Statistical and machine learning models of acoustic-prosodic features, compared across gender and first-language groups.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap section-head">
-    <h2>Publications</h2>
-    <ul class="pubs">
-      <li><span class="year">2021</span>Sengupta, A. et al. Results of the Second SIGMORPHON Shared Task on Multilingual Grapheme-to-Phoneme Conversion. <em>Association for Computational Linguistics.</em></li>
-      <li><span class="year">2016</span>Sengupta, A. Voice Onset Time and Burst Duration of Bangla Labial Stop Consonants in CV Context. <em>Language in India</em>, 16(3), 37–45.</li>
-      <li><span class="year">2010</span>Editor, <em>Proceedings of Multilingual Speech Resources</em>. Central Institute of Indian Languages.</li>
-      <li><span class="year">Editor</span><em>Longman-CIIL Basic English-English-Bengali Dictionary</em>. Pearson/Longman.</li>
+  <h2 class="feature-title" id="dissertation">Dissertation</h2>
+  <div class="dissertation">
+    <p class="title">A Study of Bengali Grapheme-to-Phoneme Conversion</p>
+    <p class="meta">Arundhati Sengupta · Ph.D. in Linguistics, Graduate Center, City University of New York, 2026</p>
+    <p>Bengali is spoken by over 230 million people, yet G2P conversion for it has received little attention. Bengali spelling doesn't map neatly onto pronunciation, above all in whether the inherent vowel is pronounced and how. My dissertation identified where G2P errors come from and developed ways to fix them.</p>
+    <ul>
+      <li><b>Neural model comparison and error analysis.</b> I trained and compared four neural G2P architectures (attentive recurrent models, a transducer and a transformer) and used a finite-state error analysis to trace most remaining errors to inherent-vowel realization.</li>
+      <li><b>Hybrid models.</b> Based on that finding, I built an inherent-vowel correction classifier that works as a post-hoc layer on top of the neural models and substantially reduces word error rate.</li>
+      <li><b>Multi-source corpus.</b> I created the first multi-source G2P corpus for Bengali, combining two independently built lexicons, and found that a training resource's transcription consistency matters more than its raw coverage.</li>
+      <li id="llm"><b>LLM evaluation.</b> In the first systematic evaluation of LLMs on Bengali G2P, I piloted four models (Gemini 2.5 Pro, Claude Opus 4.5, Claude Sonnet 4 and GPT-4o) through their APIs, using curated 20-shot prompts, then tested the best one, Gemini 2.5 Pro, in zero- and few-shot settings on two lexicons. Even Gemini trailed a purpose-built LSTM baseline (39.5 vs. 15.8 word error rate), and it failed most often on phonology the spelling doesn't show, such as inherent-vowel realization and diphthongs.</li>
+      <li><b>Diacritization.</b> I introduced the first publicly available Bengali diacritization corpus, and showed that restoring pronunciation-disambiguating diacritics lets both a recurrent model and a fine-tuned byte-level transformer resolve the ambiguity directly.</li>
     </ul>
   </div>
+
+  <hr>
+
+  <h2 class="feature-title">Selected projects</h2>
+  <p class="feature-text">Tools, corpora and earlier research.</p>
+</main>
+
+<section class="page">
+  <div class="projects">
+    <div class="project">
+      <div class="kicker">Open source</div>
+      <h3><a href="https://github.com/arundhati-sengupta/g2pErrorAnalysis">G2P Error Analysis Tool</a></h3>
+      <p>A WFST- and rule-based QA tool that automates quality control and systematic error reporting on grapheme-to-phoneme model output.</p>
+    </div>
+    <div class="project">
+      <div class="kicker">Grant-funded</div>
+      <h3>Multilingual annotated corpora</h3>
+      <p>Large-scale corpora built with native-speaker annotators, with guidelines I wrote and ambiguous cases I adjudicated (BSF grant). Integrated with heterogeneous datasets in SQL and Python (PSC-CUNY grant).</p>
+    </div>
+    <div class="project">
+      <div class="kicker">M.A. thesis</div>
+      <h3>Personality Trait Prediction from Speech</h3>
+      <p>Statistical and machine learning models of acoustic-prosodic features, compared across gender and first-language groups.</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <div class="wrap">© 2026 Arundhati Sengupta</div>
+<section class="text">
+  <hr>
+  <h2 class="feature-title">Publications</h2>
+  <div class="cv-section">
+    <div class="cv-row">
+      <div class="cv-date">2021</div>
+      <div class="pubs">
+        <div class="pub-title">Results of the Second SIGMORPHON Shared Task on Multilingual Grapheme-to-Phoneme Conversion</div>
+        <div>Ashby, L. F. E., Gorman, K., … <b>Sengupta, A.</b>, et al.</div>
+        <div class="pub-venue">Proceedings of the 18th SIGMORPHON Workshop, Association for Computational Linguistics</div>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="cv-date">2016</div>
+      <div class="pubs">
+        <div class="pub-title">Voice Onset Time and Burst Duration of Bangla Labial Stop Consonants in CV Context</div>
+        <div><b>Sengupta, A.</b></div>
+        <div class="pub-venue"><i>Language in India</i>, 16(3), 37–45</div>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="cv-date">2010</div>
+      <div class="pubs">
+        <div class="pub-title">Proceedings of Multilingual Speech Resources</div>
+        <div>Editor</div>
+        <div class="pub-venue">Central Institute of Indian Languages</div>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="cv-date">Editor</div>
+      <div class="pubs">
+        <div class="pub-title">Longman-CIIL Basic English-English-Bengali Dictionary</div>
+        <div class="pub-venue">Pearson/Longman</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="page">
+    <div>
+      <div class="footer-icons">
+        <a href="mailto:arundhatisengupta2@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/arundhatisengupta/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/arundhati-sengupta" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="Arundhati_Sengupta_Resume.pdf" title="Resume (PDF)"><i class="fas fa-file-pdf"></i></a>
+      </div>
+      <p class="footer-small">© 2026 Arundhati Sengupta</p>
+    </div>
+    <div>
+      <p>I'm interested in roles and collaborations in LLM data, annotation and evaluation, especially work involving multilingual and low-resource languages.</p>
+      <p><a href="mailto:arundhatisengupta2@gmail.com">arundhatisengupta2@gmail.com</a></p>
+    </div>
+  </div>
 </footer>
 
 </body>

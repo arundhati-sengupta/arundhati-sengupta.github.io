@@ -4,141 +4,195 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume | Arundhati Sengupta</title>
-  <meta name="description" content="Resume of Arundhati Sengupta, computational linguist: experience, education and skills.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5c57'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%23ffffff' text-anchor='middle'%3E%E0%A6%85%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Resume of Arundhati Sengupta, computational linguist: AI training and evaluation data for speech and text.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23357edd'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%23ffffff' text-anchor='middle'%3E%E0%A6%85%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="wrap">
-    <a class="brand" href="index.html" title="Home" lang="bn">অ</a>
-    <ul>
-      <li><a href="index.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="resume.html" aria-current="page">Resume</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<header class="page-head">
-  <div class="wrap">
-    <p class="eyebrow">Resume</p>
-    <h1>Experience</h1>
-    <p class="lede">Computational Linguist: LLM data, annotation and evaluation.</p>
-    <div class="links">
-      <a class="btn primary" href="Arundhati_Sengupta_Resume.pdf">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm7 1.5V9h5.5zM8 13h8v1.5H8zm0 3.5h8V18H8z"/></svg>
-        Download PDF</a>
-    </div>
+<header class="masthead">
+  <div class="page">
+    <a class="name" href="index.html">Arundhati Sengupta</a>
+    <nav>
+      <a class="pill" href="index.html">About</a>
+      <a class="pill" href="research.html">Research</a>
+      <a class="pill" href="resume.html" aria-current="page">Resume</a>
+      <a class="pill" href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
-<section>
-  <div class="wrap">
-    <div class="entry">
-      <div class="when">Aug 2023 – Sep 2025</div>
+<main class="text">
+  <h1 class="page-title">Resume</h1>
+  <p class="page-subtitle">Computational Linguist: AI training and evaluation data (speech and text).</p>
+  <a class="pill" href="Arundhati_Sengupta_Resume.pdf"><i class="fas fa-file-pdf icon-space" style="color:#d9534f"></i>Download PDF</a>
+
+  <div class="cv-section">
+    <h2>Summary</h2>
+    <p>Computational linguist with 10+ years running human data programs for language technology: gathering requirements, writing annotator instructions, defining quality criteria, training annotators and delivering quality-controlled speech and text data across 22 languages and scripts. Led end-to-end corpus programs at the Central Institute of Indian Languages (CIIL) for seven years, evaluated speech data for Google, and benchmarked four frontier LLMs on Bengali pronunciation. Ph.D. in Linguistics (CUNY).</p>
+  </div>
+
+  <div class="cv-section">
+    <h2>Experience</h2>
+    <div class="cv-row">
+      <div class="cv-date">Oct 2025 – Sep 2026</div>
+      <div>
+        <h3>Ph.D. Dissertation Completion</h3>
+        <p class="cv-where">Graduate Center, CUNY</p>
+        <ul>
+          <li>Completed dissertation research on Bengali pronunciation modeling (approved Sep 2026), including the first multi-source Bengali G2P corpus and the first publicly available Bengali diacritization corpus.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="cv-date">Aug 2023 – Sep 2025</div>
       <div>
         <h3>Research Assistant: Language Data &amp; Model Evaluation</h3>
-        <p class="where">Research Foundation, CUNY</p>
+        <p class="cv-where">Research Foundation of CUNY</p>
         <ul>
-          <li>Built and quality-controlled large-scale multilingual annotated corpora with native-speaker annotators; wrote annotation guidelines and adjudicated ambiguous cases so annotators labeled consistently (BSF grant).</li>
-          <li>Designed zero- and few-shot prompts and ran a systematic API-based benchmark of four LLMs (Gemini 2.5 Pro, Claude Opus 4.5, Claude Sonnet 4, GPT-4o) on Bengali grapheme-to-phoneme conversion; categorized model errors by type and root cause.</li>
-          <li>Developed grapheme-to-phoneme and diacritization models in Python/PyTorch using neural sequence methods, with reproducible train/eval splits across languages and scripts.</li>
-          <li>Integrated heterogeneous multilingual datasets using SQL and Python (PSC-CUNY grant); tuned models with Weights &amp; Biases, reaching a 10% relative error reduction over baseline.</li>
+          <li>Built and quality-controlled large multilingual annotated corpora with five native-speaker annotators across three languages; <b>wrote the annotation guidelines, trained annotators</b> and adjudicated disagreements so labels stayed consistent (BSF grant).</li>
+          <li><b>Benchmarked four frontier LLMs</b> (Gemini 2.5 Pro, Claude Opus 4.5, Claude Sonnet 4, GPT-4o) on Bengali pronunciation. Even the best model had 2.5× the word error rate of a purpose-built neural model (39.5% vs. 15.8%), failing on sounds the spelling does not show.</li>
+          <li>Built G2P and diacritization models in <b>Python/PyTorch</b> and integrated multilingual datasets with SQL (PSC-CUNY grant), reaching a <b>10% relative error reduction</b> over baseline.</li>
         </ul>
       </div>
     </div>
-    <div class="entry">
-      <div class="when">Teaching</div>
+    <div class="cv-row">
+      <div class="cv-date">Sep 2019 – Dec 2021</div>
       <div>
-        <h3>Instructor, NLP-focused courses</h3>
-        <p class="where">Graduate Center, City University of New York</p>
+        <h3>Teaching Assistant, NLP-focused courses</h3>
+        <p class="cv-where">Graduate Center, CUNY</p>
+        <ul>
+          <li>Taught and led practicum sessions for Computational Linguistics Methods I and II, covering Python for NLP and text classification.</li>
+        </ul>
       </div>
     </div>
-    <div class="entry">
-      <div class="when">Sep 2013 – Aug 2016</div>
+    <div class="cv-row">
+      <div class="cv-date">Sep 2013 – Aug 2016</div>
       <div>
         <h3>Freelance Linguistic QA Reviewer</h3>
-        <p class="where">Lionbridge Technologies, Inc.</p>
+        <p class="cv-where">Lionbridge Technologies, Inc.</p>
         <ul>
-          <li>Performed linguistic quality assurance on multilingual software output, giving structured, actionable feedback to engineering and localization teams.</li>
+          <li>Reviewed multilingual software output for linguistic quality, giving structured, actionable feedback to engineering and localization teams.</li>
         </ul>
       </div>
     </div>
-    <div class="entry">
-      <div class="when">Nov 2012 – Sep 2013</div>
+    <div class="cv-row">
+      <div class="cv-date">Nov 2012 – Aug 2013</div>
       <div>
         <h3>Speech Data Evaluator</h3>
-        <p class="where">Google Inc.</p>
+        <p class="cv-where">Google Inc.</p>
         <ul>
-          <li>Assessed acoustic and phonemic model performance on large-scale speech datasets using quantitative metrics; designed phonemic inventories and reported findings to cross-functional engineering teams.</li>
+          <li>Evaluated acoustic and phonemic model performance on large-scale speech data; designed phonemic inventories and reported findings to engineering teams, improving models and training data.</li>
         </ul>
       </div>
     </div>
-    <div class="entry">
-      <div class="when">Oct 2005 – Oct 2012</div>
+    <div class="cv-row">
+      <div class="cv-date">Oct 2005 – Oct 2012</div>
       <div>
         <h3>Linguistic Data Scientist</h3>
-        <p class="where">Central Institute of Indian Languages</p>
+        <p class="cv-where">Central Institute of Indian Languages (CIIL)</p>
         <ul>
-          <li>Led speech and text corpus projects across multiple Indian languages and dialects, designing data collection protocols, annotation guidelines and evaluation metrics for multilingual, multi-script language resources.</li>
-          <li>Ran A/B testing and systematic error analysis to assess data and resource quality at scale, with close attention to dialect and register variation.</li>
-          <li>Worked as liaison between linguists, annotators and engineers, turning linguistic findings into product and pipeline improvements.</li>
+          <li><b>Designed and ran speech and text data collections</b> across 22 Indian languages and dialects, owning collection protocols, annotation guidelines and evaluation metrics through to <b>final delivery</b> of multilingual, multi-script language resources.</li>
+          <li>Hired, trained and managed the LDC-IL team spanning data collection, annotation, UX and technical writing; directed prototype builds and benchmarked interfaces to choose the final design.</li>
+          <li>Partnered with linguists, annotators and engineers as their liaison, turning quality findings into guideline and pipeline improvements; edited <i>Proceedings of Multilingual Speech Resources</i> (2010).</li>
         </ul>
       </div>
     </div>
   </div>
-</section>
 
-<section>
-  <div class="wrap">
+  <div class="cv-section">
+    <h2>Selected projects</h2>
+    <div class="cv-row">
+      <div class="cv-date">Open source</div>
+      <div>
+        <h3><a href="https://github.com/arundhati-sengupta/g2pErrorAnalysis">G2P Error Analysis Tool</a></h3>
+        <p class="cv-where" style="margin:0">WFST/rule-based QA tool that automates quality control and systematic error reporting on model output.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-section">
     <h2>Education</h2>
-    <div class="entry">
-      <div class="when">2019 – 2026</div>
+    <div class="cv-row">
+      <div class="cv-date">Aug 2019 – Sep 2026</div>
       <div>
         <h3>Ph.D. in Linguistics</h3>
-        <p class="where">Graduate Center, City University of New York</p>
-        <p>Dissertation: <em>A Study of Bengali Grapheme-to-Phoneme Conversion</em></p>
+        <p class="cv-where">Graduate Center, CUNY</p>
+        <p style="margin:0">Dissertation: <i>A Study of Bengali Grapheme-to-Phoneme Conversion</i></p>
       </div>
     </div>
-    <div class="entry">
-      <div class="when">2016 – 2018</div>
+    <div class="cv-row">
+      <div class="cv-date">2016 – 2018</div>
       <div>
         <h3>M.A. in Linguistics</h3>
-        <p class="where">Graduate Center, City University of New York</p>
+        <p class="cv-where">Graduate Center, CUNY</p>
+        <p style="margin:0">Computational thesis: <i>Personality Trait Prediction from Speech</i></p>
       </div>
     </div>
-    <div class="entry">
-      <div class="when">2000 – 2005</div>
+    <div class="cv-row">
+      <div class="cv-date">2000 – 2005</div>
       <div>
         <h3>M.A. and B.A. in Linguistics</h3>
-        <p class="where">University of Calcutta, India</p>
+        <p class="cv-where">University of Calcutta, India</p>
       </div>
     </div>
   </div>
-</section>
 
-<section>
-  <div class="wrap">
+  <div class="cv-section">
     <h2>Skills</h2>
-    <div class="skills">
-      <div><h3>Programming &amp; data</h3><p>Python (PyTorch, Hugging Face Transformers, scikit-learn, Pynini, TensorFlow, Fairseq), SQL, R, UNIX, Git, Jupyter, Excel/Sheets</p></div>
-      <div><h3>LLMs</h3><p>Prompt engineering (zero-/few-shot), benchmarking LLMs via API against task baselines, systematic error analysis of LLM output</p></div>
-      <div><h3>Data &amp; annotation</h3><p>Guideline authoring, annotator training and QC, inter-annotator agreement, data collection protocols, multilingual corpus curation, A/B testing, reproducible study design</p></div>
-      <div><h3>Rule encoding</h3><p>Regular expressions and finite-state (WFST) rewrite rules for pattern extraction, text normalization and rule-based classification</p></div>
-      <div><h3>Linguistics</h3><p>Syntax, semantics, pragmatics, sociolinguistics, corpus linguistics, phonetics and phonology, morphology</p></div>
-      <div><h3>Languages</h3><p>English (native), Bengali (native), Hindi (professional); analysis across many South Asian languages and scripts</p></div>
+    <div class="cv-row cv-skill"><div class="cv-date">Program &amp; operations</div><p>Requirements gathering, annotator instructions and success criteria, annotator training, process improvement</p></div>
+    <div class="cv-row cv-skill"><div class="cv-date">Data annotation &amp; quality</div><p>Guideline authoring, QC, inter-annotator agreement, adjudication, data quality audits, A/B testing, corpus curation</p></div>
+    <div class="cv-row cv-skill"><div class="cv-date">Large language models</div><p>Prompt engineering (zero-/few-shot), API-based LLM benchmarking (Gemini, Claude, GPT-4o), LLM error analysis</p></div>
+    <div class="cv-row cv-skill"><div class="cv-date">Speech data</div><p>Speech corpus design and collection, acoustic and phonemic model evaluation, phonemic inventories, pronunciation lexicons (G2P), forced alignment (Praat/TextGrid)</p></div>
+    <div class="cv-row cv-skill"><div class="cv-date">Python &amp; NLP</div><p>Python (API scripting, PyTorch, Hugging Face, scikit-learn, Pynini), SQL, R, UNIX, Git, finite-state (WFST) rules</p></div>
+    <div class="cv-row cv-skill"><div class="cv-date">Languages</div><p>English (native), Bengali (native), Hindi (professional)</p></div>
+  </div>
+
+  <div class="cv-section">
+    <h2>Selected publications</h2>
+    <div class="cv-row">
+      <div class="cv-date">2021</div>
+      <div class="pubs">
+        <div class="pub-title">Results of the Second SIGMORPHON Shared Task on Multilingual Grapheme-to-Phoneme Conversion</div>
+        <div>Ashby, L. F. E., Gorman, K., … <b>Sengupta, A.</b>, et al. My contribution: built the error analysis tool.</div>
+        <div class="pub-venue">Proceedings of the 18th SIGMORPHON Workshop, 115–125. ACL.</div>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="cv-date">2016</div>
+      <div class="pubs">
+        <div class="pub-title">Voice Onset Time and Burst Duration of Bangla Labial Stop Consonants in CV Context</div>
+        <div><b>Sengupta, A.</b></div>
+        <div class="pub-venue"><i>Language in India</i>, 16(3), 37–45.</div>
+      </div>
+    </div>
+    <div class="cv-row">
+      <div class="cv-date">Editor</div>
+      <div class="pubs">
+        <div class="pub-title">Longman-CIIL Basic English-English-Bengali Dictionary</div>
+        <div class="pub-venue">Pearson/Longman. Also editor, <i>Proceedings of Multilingual Speech Resources</i>, CIIL, 2010.</div>
+      </div>
     </div>
   </div>
-</section>
+</main>
 
-<footer>
-  <div class="wrap">© 2026 Arundhati Sengupta</div>
+<footer id="contact">
+  <div class="page">
+    <div>
+      <div class="footer-icons">
+        <a href="mailto:arundhatisengupta2@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/arundhatisengupta/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/arundhati-sengupta" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="Arundhati_Sengupta_Resume.pdf" title="Resume (PDF)"><i class="fas fa-file-pdf"></i></a>
+      </div>
+      <p class="footer-small">© 2026 Arundhati Sengupta</p>
+    </div>
+    <div>
+      <p>I'm interested in roles and collaborations in LLM data, annotation and evaluation, especially work involving multilingual and low-resource languages.</p>
+      <p><a href="mailto:arundhatisengupta2@gmail.com">arundhatisengupta2@gmail.com</a></p>
+    </div>
+  </div>
 </footer>
 
 </body>
